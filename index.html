@@ -167,11 +167,11 @@ I am passionate about leveraging cutting-edge computational methods to transform
 										 <style>
     
 
-        .conference-container {
+   /*        .conference-container {
             margin: 20px auto;
             max-width: 600px;
             padding: 20px;
-          /*  background-color: #fff; */
+         background-color: #fff; 
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
@@ -192,7 +192,7 @@ I am passionate about leveraging cutting-edge computational methods to transform
         }
 
         .conference-item {
-          /*   background-color: #e6f2ff; */
+          /*   background-color: #e6f2ff; 
             margin-bottom: 8px;
             padding: 10px;
             border-left: 4px solid #929ef7;
@@ -203,6 +203,67 @@ I am passionate about leveraging cutting-edge computational methods to transform
         .conference-item:nth-child(even) {
             background-color: #f0f8ff;
         }
+
+											 */ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.year-section {
+    position: relative;
+    padding-left: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+.year-section::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    margin-top: 20px;
+}
+
+.year-background {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 4em;
+    color: rgba(200, 200, 200, 0.3);
+    font-weight: bold;
+}
+
+.conference-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.conference-list li {
+    font-size: 1.2em;
+    padding: 8px 0;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .year-section {
+        padding-left: 80px;
+    }
+
+    .year-background {
+        font-size: 3em;
+    }
+}
+
     </style>
 										<article>
 											
